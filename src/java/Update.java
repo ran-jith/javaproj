@@ -20,7 +20,7 @@ public class Update extends HttpServlet {
         String dbName = "library";
         String driver = "com.mysql.jdbc.Driver";
         String userName = "root";
-        String password = "password123";
+        String password = "root";
  
         Statement st;
         try {

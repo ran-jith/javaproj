@@ -45,22 +45,20 @@
         <div class="splitleft">
           <h1 class="bkhead"><b>Manage Books</b></h1>
           <br><br><br><br><br>
-          <a href="book/addbk.jsp"><button type="btn btn-lg btn-danger">Add Book</button></a><br><br>
-          <a href="Display"><button type="btn btn-lg btn-danger">Update Book</button></a><br><br>
-          <a href="delbk.jsp"><button type="btn btn-lg btn-danger">Delete Book</button></a><br><br>
-          <a href="issbk.jsp"><button type="btn btn-lg btn-danger">Issue Book</button></a><br><br>
-          <a href="retbk.jsp"><button type="btn btn-lg btn-danger">Return Book</button></a><br>
+          <a href="book/addbk.jsp"><button class="btn btn-lg btn-danger">Add Book</button></a><br><br>
+          <a href="Display"><button class="btn btn-lg btn-danger">Update Book</button></a><br><br>
+          <a href="book/issbk.jsp"><button class="btn btn-lg btn-danger">Issue Book</button></a><br><br>
+          <a href="book/retbk.jsp"><button class="btn btn-lg btn-danger">Return Book</button></a><br>
 
         </div>
 
         <div class="splitright">
           <h1 class="sthead"><b>Manage Students</b></h1>
           <br><br><br><br><br>
-          <form method="post" action="/library/Search">
-          <a href="/library/Search"><button type="btn btn-lg btn-danger">Add Student</button></a><br><br>
-          <a href="delstud.jsp"><button type="btn btn-lg btn-danger">Delete Student</button></a><br><br>
+          <a href="/javaproj/student/addst.jsp"><button class="btn btn-lg btn-danger">Add Student</button></a><br><br>
+        <!--  <a href="delstud.jsp"><button type="btn btn-lg btn-danger">Delete Student</button></a><br><br>
           <a href="upstud.jsp"><button type="btn btn-lg btn-danger">Update Student</button></a><br><br>
-          </form>
+          -->
         </div>
 
 

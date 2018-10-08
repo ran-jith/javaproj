@@ -43,37 +43,51 @@
       
       
 <div class="container">
-  <h2>Add Book</h2>
-  <form class="form-horizontal" action="/javaproj/AddBook" method="post">
+  <h2>Issue Book</h2>
+  <form class="form-horizontal" action="/javaproj/IssueBook" method="post">
     <div class="form-group">
-      <label class="control-label col-sm-2" for="bookname">Book Name:</label>
+      <label class="control-label col-sm-2" for="bookname">Student_ID:</label>
       <div class="col-sm-5">
-        <input type="text" class="form-control" id="email" placeholder="Enter Book name" name="bname">
+        <input type="text" class="form-control" id="email" placeholder="Enter Student ID" name="sid">
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label col-sm-2" for="authorname">Author Name:</label>
+      <label class="control-label col-sm-2" for="authorname">Book_ID:</label>
       <div class="col-sm-5">          
-        <input type="text" class="form-control" id="pwd" placeholder="Enter Author Name" name="bauthor">
+        <input type="text" class="form-control" id="pwd" placeholder="Enter book id" name="bkid">
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label col-sm-2" for="year">Year:</label>
+      <label class="control-label col-sm-2" for="year">Issue_Date:</label>
       <div class="col-sm-5">          
-        <input type="text" class="form-control" id="pwd" placeholder="Enter Year(yyyy-dd-mm)" name="bdate">
+        <input type="text" class="form-control" id="pwd" placeholder="Enter Date(yyyy-dd-mm)" name="idate">
       </div>
     </div>   
       
     <div class="form-group">
-      <label class="control-label col-sm-2" for="year">No.Of copies:</label>
+      <label class="control-label col-sm-2" for="year">Return_Date:</label>
       <div class="col-sm-5">          
-        <input type="text" class="form-control" id="pwd" placeholder="Enter copies" name="bnum" required>
+        <input type="text" class="form-control" id="pwd" placeholder="Enter Date(yyyy-dd-mm)" name="rdate" required>
       </div>
     </div> 
       
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="year">Available:</label>
+      <div class="col-sm-5">          
+        <input type="radio" class="form-control" id="pwd" placeholder="Enter Date(yyyy-dd-mm)" name="rm" value="Available" required>
+      </div>
+    </div>
+      
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="year">Unavailable:</label>
+      <div class="col-sm-5">          
+        <input type="radio" class="form-control" id="pwd" placeholder="Enter Date(yyyy-dd-mm)" name="rm" value="Unavailable" required>
+      </div>
+    </div>
+      
     <div class="form-group">        
       <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-primary">Add Book</button>
+        <button type="submit" class="btn btn-primary">Issue Book</button>
       </div>
     </div>
   </form>

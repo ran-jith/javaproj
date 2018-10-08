@@ -20,7 +20,7 @@ public class AddBook extends HttpServlet {
         String dbName = "library";
         String driver = "com.mysql.jdbc.Driver";
         String userName = "root";
-        String password = "password123";
+        String password = "root";
  
         Statement st;
         try {
@@ -37,11 +37,10 @@ public class AddBook extends HttpServlet {
             
            
        
-            RequestDispatcher view = req.getRequestDispatcher("/searchv.jsp");
-            view.forward(req, res);
+           out.println("Successfully inserted");
             conn.close();
             System.out.println("Disconnected!");
-        } catch (IOException | ClassNotFoundException | IllegalAccessException | InstantiationException | SQLException | ServletException e) {
+        } catch (ClassNotFoundException | IllegalAccessException | InstantiationException | SQLException e) {
             System.out.print(e);
             e.printStackTrace();
         }

@@ -3,8 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/root/NetBeansProjects/library/src/java/Updated.java</file>
-            <file>file:/root/NetBeansProjects/library/web/book/upform.jsp</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/web/WEB-INF/web.xml</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/src/java/AddBook.java</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/web/searchv.jsp</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/src/java/Delete.java</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/src/java/Updated.java</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/src/java/Search.java</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/src/java/Update.java</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/web/book/addbk.jsp</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/src/java/Test1.java</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/src/java/Display.java</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/src/java/Test.java</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/src/java/Admin.java</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/web/admin.jsp</file>
         </group>
     </open-files>
 </project-private>

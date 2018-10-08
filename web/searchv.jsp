@@ -49,6 +49,7 @@
                 <td><b>Book Name</b></td>
                 <td><b>Author</b></td>
                 <td><b>Year</b></td>
+                <td><b>Copies</b></td>
             </tr>
             <%
                 int count = 0;
@@ -66,6 +67,7 @@
                 <td><%=books.get(1)%></td>
                 <td><%=books.get(2)%></td>
                 <td><%=books.get(3)%></td>
+                <td><%=books.get(4)%></td>
             </tr>
             <%
                     }

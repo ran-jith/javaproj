@@ -45,8 +45,8 @@
 </div>
 
 </div>
-        <div class="quats"><br><br><br><br><br><br>
-          <h class="qp" id="quats">sample k.hdgflhjsdgfhljsfhgshjfvjhfgg djhasfjdvfasghdfashgdghasdfhgasfdhgasdhgascdhmgascgh</h>
+       <b> <div class="quats"><b><br><br><br><br><br><br>
+          <h class="qp" id="quats"><b>test</b></h>
         </div>
 
 

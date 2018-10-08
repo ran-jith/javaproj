@@ -2,12 +2,12 @@
 
 function Quat()
 {
-    var q1 = "q1";
-    var q2 = "q2";
-    var q3 = "q3";
-    var q4 = "q4";
-    var q5 = "q5";
-    var q6 = "q6"
+    var q1 = "Bad libraries build collections, good libraries build services, great libraries build communities.";
+    var q2 = "An original idea. That can’t be too hard. The library must be full of them.";
+    var q3 = "Libraries will get you through times of no money better than money will get you through times of no libraries.";
+    var q4 = "The truth is libraries are raucous clubhouses for free speech, controversy and community.";
+    var q5 = "The most important asset of any library goes home at night the library staff.";
+    var q6 = "In the nonstop tsunami of global information, librarians provide us with floaties and teach us to swim."
     var chn = Math.floor(Math.random() * 6) + 0 ; 
     switch (chn) {
     case 0:

@@ -32,6 +32,18 @@
         <servlet-name>Updated</servlet-name>
         <servlet-class>Updated</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Test1</servlet-name>
+        <servlet-class>Test1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>IssueBook</servlet-name>
+        <servlet-class>IssueBook</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddStudent</servlet-name>
+        <servlet-class>AddStudent</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Search</servlet-name>
         <url-pattern>/Search</url-pattern>
@@ -63,6 +75,18 @@
     <servlet-mapping>
         <servlet-name>Updated</servlet-name>
         <url-pattern>/Updated</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Test1</servlet-name>
+        <url-pattern>/Test1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>IssueBook</servlet-name>
+        <url-pattern>/IssueBook</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddStudent</servlet-name>
+        <url-pattern>/AddStudent</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -20,7 +20,7 @@ public class Search extends HttpServlet {
         String dbName = "library";
         String driver = "com.mysql.jdbc.Driver";
         String userName = "root";
-        String password = "password123";
+        String password = "root";
  
         Statement st;
         try {
@@ -43,6 +43,7 @@ public class Search extends HttpServlet {
                 al.add(rs.getString(2));
                 al.add(rs.getString(3));
                 al.add(rs.getDate(4));
+                al.add(rs.getString(5));
  
                // System.out.println("al :: " + al);
                 book_list.add(al);

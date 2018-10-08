@@ -40,7 +40,7 @@
  <table width="700px" height="200px" align="center" 
         style="border:1px solid #000000;" class="tablec table table-bordered">
             <tr>
-                <td colspan=5 align="center"
+                <td colspan=6 align="center"
                     style="background-color:#FA2379">
                     <b>Available Books</b></td>
             </tr>
@@ -70,8 +70,8 @@
                 <td><%=books.get(3)%></td>
                 <td><%=books.get(4)%></td>
                  <form method="post" action="Update">
-                <td><input type="text" value="<%=books.get(0)%>" name="hnum"</a></td>  
-                <td><input type="submit" value="Submit"></td></form>
+                <input type="hidden" value="<%=books.get(0)%>" name="hnum">  
+                <td><input type="submit" class="btn btn-primary" value="Edit"></td></form>
             </tr>
             <%
                     }
