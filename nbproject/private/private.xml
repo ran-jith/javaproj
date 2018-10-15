@@ -4,18 +4,27 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/acer/NetBeansProjects/javaproj/web/WEB-INF/web.xml</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/web/book/issbk.jsp</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/web/book/upform.jsp</file>
             <file>file:/home/acer/NetBeansProjects/javaproj/src/java/AddBook.java</file>
             <file>file:/home/acer/NetBeansProjects/javaproj/web/searchv.jsp</file>
             <file>file:/home/acer/NetBeansProjects/javaproj/src/java/Delete.java</file>
             <file>file:/home/acer/NetBeansProjects/javaproj/src/java/Updated.java</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/src/java/AddStudent.java</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/web/student/addst.jsp</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/web/index.jsp</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/web/book/upbk.jsp</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/web/js/index.js</file>
             <file>file:/home/acer/NetBeansProjects/javaproj/src/java/Search.java</file>
             <file>file:/home/acer/NetBeansProjects/javaproj/src/java/Update.java</file>
             <file>file:/home/acer/NetBeansProjects/javaproj/web/book/addbk.jsp</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/web/book/disp.jsp</file>
             <file>file:/home/acer/NetBeansProjects/javaproj/src/java/Test1.java</file>
             <file>file:/home/acer/NetBeansProjects/javaproj/src/java/Display.java</file>
             <file>file:/home/acer/NetBeansProjects/javaproj/src/java/Test.java</file>
             <file>file:/home/acer/NetBeansProjects/javaproj/src/java/Admin.java</file>
             <file>file:/home/acer/NetBeansProjects/javaproj/web/admin.jsp</file>
+            <file>file:/home/acer/NetBeansProjects/javaproj/src/java/IssueBook.java</file>
         </group>
     </open-files>
 </project-private>

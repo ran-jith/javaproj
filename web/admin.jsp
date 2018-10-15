@@ -43,8 +43,8 @@
 
 
         <div class="splitleft">
-          <h1 class="bkhead"><b>Manage Books</b></h1>
-          <br><br><br><br><br>
+          <h1 class="bkhead"><font color="white"><b>Manage Books</b></font></h1>
+          <br><br>
           <a href="book/addbk.jsp"><button class="btn btn-lg btn-danger">Add Book</button></a><br><br>
           <a href="Display"><button class="btn btn-lg btn-danger">Update Book</button></a><br><br>
           <a href="book/issbk.jsp"><button class="btn btn-lg btn-danger">Issue Book</button></a><br><br>
@@ -53,7 +53,7 @@
         </div>
 
         <div class="splitright">
-          <h1 class="sthead"><b>Manage Students</b></h1>
+          <h1 class="sthead"><b><font color="white">Manage Students</font></b></h1>
           <br><br><br><br><br>
           <a href="/javaproj/student/addst.jsp"><button class="btn btn-lg btn-danger">Add Student</button></a><br><br>
         <!--  <a href="delstud.jsp"><button type="btn btn-lg btn-danger">Delete Student</button></a><br><br>

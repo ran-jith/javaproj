@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
  
-public class IssueBook extends HttpServlet {
+public class Issued extends HttpServlet {
  
     protected void doPost(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
@@ -27,12 +27,11 @@ public class IssueBook extends HttpServlet {
             Class.forName(driver).newInstance();
             conn = DriverManager.getConnection(url + dbName, userName, password);
             System.out.println("Connected!");
-            String bkname = req.getParameter("hsrbook");
-           
+           String n = req.getParameter("hnum");
  
             ArrayList al = null;
             ArrayList book_list = new ArrayList();
-            String query = "select * from books where Name like '%"+ bkname + "%' ";
+            String query = "select *from books where id='"+n+"' ";
  
             System.out.println("query " + query);
             st = conn.createStatement();
@@ -51,7 +50,7 @@ public class IssueBook extends HttpServlet {
             }
  
             req.setAttribute("bklist", book_list);
-            RequestDispatcher view = req.getRequestDispatcher("/search.jsp");
+            RequestDispatcher view = req.getRequestDispatcher("issued.jsp");
             view.forward(req, res);
             conn.close();
             System.out.println("Disconnected!");

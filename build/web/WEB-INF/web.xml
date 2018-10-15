@@ -44,6 +44,22 @@
         <servlet-name>AddStudent</servlet-name>
         <servlet-class>AddStudent</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Issued</servlet-name>
+        <servlet-class>Issued</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Issue</servlet-name>
+        <servlet-class>Issue</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Return</servlet-name>
+        <servlet-class>Return</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Returns</servlet-name>
+        <servlet-class>Returns</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Search</servlet-name>
         <url-pattern>/Search</url-pattern>
@@ -87,6 +103,22 @@
     <servlet-mapping>
         <servlet-name>AddStudent</servlet-name>
         <url-pattern>/AddStudent</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Issued</servlet-name>
+        <url-pattern>/Issued</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Issue</servlet-name>
+        <url-pattern>/Issue</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Return</servlet-name>
+        <url-pattern>/Return</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Returns</servlet-name>
+        <url-pattern>/Returns</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

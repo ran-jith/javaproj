@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.*;
+import java.util.Date;
 import java.util.ArrayList;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -8,11 +9,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
  
-public class IssueBook extends HttpServlet {
+public class Issue extends HttpServlet {
  
     protected void doPost(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
-        //doGet(req,res);
         res.setContentType("text/html");
         PrintWriter out = res.getWriter();
         Connection conn = null;
@@ -27,35 +27,25 @@ public class IssueBook extends HttpServlet {
             Class.forName(driver).newInstance();
             conn = DriverManager.getConnection(url + dbName, userName, password);
             System.out.println("Connected!");
-            String bkname = req.getParameter("hsrbook");
-           
- 
-            ArrayList al = null;
-            ArrayList book_list = new ArrayList();
-            String query = "select * from books where Name like '%"+ bkname + "%' ";
- 
-            System.out.println("query " + query);
+            String jid = req.getParameter("bid");
+            int jcopy = Integer.parseInt(req.getParameter("acopy"));
+            String jname = req.getParameter("sname");
+            String rjdate = req.getParameter("rdate");
+            String ijdate = req.getParameter("idate");
+
+
+            String query = "Insert into bookreg(student_id,books_id,issue_date,return_date) values('"+jname+"','"+jid+"','"+ijdate+"','"+rjdate+"')";
             st = conn.createStatement();
-            ResultSet rs = st.executeQuery(query);
- 
-            while (rs.next()) {
-                al = new ArrayList();
-                al.add(rs.getInt(1));
-                al.add(rs.getString(2));
-                al.add(rs.getString(3));
-                al.add(rs.getDate(4));
-                al.add(rs.getString(5));
- 
-               // System.out.println("al :: " + al);
-                book_list.add(al);
-            }
- 
-            req.setAttribute("bklist", book_list);
-            RequestDispatcher view = req.getRequestDispatcher("/search.jsp");
-            view.forward(req, res);
+            st.executeUpdate(query);
+            jcopy -=1;
+            String query2 = "update books set copies='"+jcopy+"' where id='"+jid+"'";
+            st.executeUpdate(query2);
+           
+       
+           out.println("Successfully issued");
             conn.close();
             System.out.println("Disconnected!");
-        } catch (IOException | ClassNotFoundException | IllegalAccessException | InstantiationException | SQLException | ServletException e) {
+        } catch (ClassNotFoundException | IllegalAccessException | InstantiationException | SQLException e) {
             System.out.print(e);
             e.printStackTrace();
         }

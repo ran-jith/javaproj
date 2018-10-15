@@ -40,7 +40,7 @@
  <table width="700px" align="center"
         style="border:1px solid #000000;" class="table table-bordered">
             <tr>
-                <td colspan=4 align="center"
+                <td colspan=5 align="center"
                     style="background-color:#FA2379">
                     <b>Available Books</b></td>
             </tr>

@@ -40,7 +40,7 @@
  <table width="700px" align="center"
         style="border:1px solid #000000;" class="table table-bordered">
             <tr>
-                <td colspan=5 align="center"
+                <td colspan=6 align="center"
                     style="background-color:#FA2379">
                     <b>Available Books</b></td>
             </tr>
@@ -50,6 +50,7 @@
                 <td><b>Author</b></td>
                 <td><b>Year</b></td>
                 <td><b>Copies</b></td>
+                <td><b>Action</b></td>
             </tr>
             <%
                 int count = 0;
@@ -68,6 +69,10 @@
                 <td><%=books.get(2)%></td>
                 <td><%=books.get(3)%></td>
                 <td><%=books.get(4)%></td>
+                <form method="post" action="/javaproj/Issued">
+                <input type="hidden" value="<%=books.get(0)%>" name="hnum">  
+                <td><input type="submit" class="btn btn-primary" value="Issue"></td></form>
+            </tr>
             </tr>
             <%
                     }

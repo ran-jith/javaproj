@@ -48,7 +48,7 @@ h1{
   overflow-x: hidden;
   padding-top: 50px;
   left: 0;
-  background-color: #163c69;
+ // background-color: #163c69;
 }
 
 /* Control the left side */
@@ -56,7 +56,7 @@ h1{
 /* Control the right side */
 .splitright {
   right: 0px;
-  background-color: #906d66;
+ // background-color: #906d66;
   height: 75%;
   width: 50%;
   position: absolute;
