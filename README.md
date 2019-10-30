@@ -1,2 +1,2 @@
-# javaproj
-Library Management using Java Servlets.
+# javaproject
+Library Management using Java Servlets WAD Project.
